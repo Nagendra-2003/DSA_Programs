@@ -7,11 +7,6 @@ C++ Implementation of Simple Queue
 class Queue
 {
 private:
-
-ARYAN COLLEGE AJMER | Queue — Data Structures Notes
-
-Page 7 of 10
-
 int queue[MAXSIZE];
 int front;
 int rear;
@@ -48,11 +43,6 @@ cout<<endl<<"successfully inserted";
 }
 void deletion()
 {
-
-ARYAN COLLEGE AJMER | Queue — Data Structures Notes
-
-Page 8 of 10
-
 int num;
 if(front==-1)
 {
@@ -91,10 +81,6 @@ cout<<endl<<queue[i];
 void searching()
 {
 
-ARYAN COLLEGE AJMER | Queue — Data Structures Notes
-
-Page 9 of 10
-
 int num,i;
 if(front==-1)
 {
@@ -132,11 +118,6 @@ cout<<endl<<"1. insertion";
 cout<<endl<<"2. deletion";
 cout<<endl<<"3. traversing";
 cout<<endl<<"4. searching";
-
-ARYAN COLLEGE AJMER | Queue — Data Structures Notes
-
-Page 10 of 10
-
 cout<<endl<<"5. exit";
 cout<<endl<<"-------------";
 cout<<endl<<"enter your choice";
@@ -160,7 +141,6 @@ case 5:
 exit(1);
 default:
 cout<<endl<<"Invalid choice";
-
 }
 }
 getch();
@@ -209,9 +189,6 @@ dqueue[rear]=num;
 }
 cout<<endl<<"successfully inserted";
 }
-
-Aryan College Data Structures — Deque Notes
-
 }
 void deletion_front()
 {
@@ -256,9 +233,6 @@ else
 {
 front--;
 dqueue[front]=num;
-
-Aryan College Data Structures — Deque Notes
-
 }
 cout<<endl<<"successfully inserted...";
 }
@@ -303,9 +277,6 @@ cout<<endl<<dqueue[i];
 void searching()
 {
 int num,i;
-
-Aryan College Data Structures — Deque Notes
-
 if(front==-1)
 {
 cout<<endl<<"underflow condition";
@@ -337,7 +308,7 @@ int choice;
 clrscr();
 while(1)
 {
-cout<<endl<<"Simple Queue Operations:";
+cout<<endl<<"Dynamic Queue Operations:";
 cout<<endl<<"1. insertion at rear";
 cout<<endl<<"2. insertion at front";
 cout<<endl<<"3. deletion at front";
@@ -350,9 +321,6 @@ cout<<endl<<"enter your choice";
 cin>>choice;
 switch(choice)
 {
-
-Aryan College Data Structures — Deque Notes
-
 case 1:
 obj.insertion_rear();
 clrscr();
@@ -386,7 +354,7 @@ getch();
 
 
 
-
+// Codes of Circular Queue
 
 #include<iostream.h>
 #include<conio.h>
@@ -467,20 +435,15 @@ else
 i=front;
 while(1)
 {
-
 cout<<endl<<cqueue[i];
-
 if(i==rear)
 {
 break;
 }
-
 i=(i+1)%MAX;
-
 }
 }
 }
-
 };
 
 void main()
@@ -494,7 +457,6 @@ cout<<endl<<"Circular Operation:";
 cout<<endl<<"1. insertion";
 cout<<endl<<"2. deletion";
 cout<<endl<<"3. traverse";
-
 cout<<endl<<"4. exit";
 cout<<endl<<"--------------------";
 cout<<endl<<"enter your choice";
@@ -518,7 +480,6 @@ clrscr();
 break;
 case 4:
 exit(1);
-
 default:
 cout<<endl<<"Invalid choice";
 
